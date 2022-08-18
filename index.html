@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!--
 A quickly updatable website for my github with no compilation requirements. Just html and bootstrap.
+Parag Jain
 -->
 
 <html lang="en">
@@ -14,44 +15,32 @@ A quickly updatable website for my github with no compilation requirements. Just
 
           gtag('config', 'UA-142120882-1');
     </script>
-  
 
   <title>पराग जैन</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
 
   <!-- Bootstrap CSS -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <!--This is where you can change your style-->
-  <link href="files/font.css" rel='stylesheet' type='text/css'>
+  <link href="resources/font.css" rel='stylesheet' type='text/css'>
   </head>
 
 </head>
 
-<style>
-hr {
-  display: block;
-  margin-top: 2.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: .5px;
-}
-body {
-  background-color:  #f9fdfd;
-}
-
-a{
-  color:  #0000b3;
-}
-
-</style>
-
 <body>
+  <button
+        type="button"
+        class="btn btn-danger btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+  <i class="fas fa-arrow-up"></i>
+</button>
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Parag Jain</a>
@@ -61,23 +50,25 @@ a{
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#bio">Bio</a>
-          <a class="nav-link" href="#piblications">Publication</a>
+          <a class="nav-link active" href="#bio">Bio</a>
+          <a class="nav-link active" href="#pubs">Publication</a>
+          <a class="nav-link active" href="#talks">Talks and Tutorials</a>
+          <a class="nav-link active" href="#teaching">Teaching</a>
         </div>
       </div>
     </div>
   </nav>
-
+  
   <!-- Page Content -->
     <div class="container">
         <div class="row">
             <div class="col-md-3" >
-                <img class="img-fluid" src="files/prof_pic.png" height="400" width="400" alt=""><br>
+                <img class="img-fluid" src="resources/prof_pic.png" height="400" width="400" alt=""><br>
             </div>
             <div class="col-md-6" >
-                <p>I am a PhD student at University of Edinburgh.<br>
-                Interested in Machine Learning and Natural Language Processing</p>
-                <p>You can reach me via Email: parag1.jain2@ed.ac.uk *remove numbers</p>
+              I am a PhD student at the School of Informatics, University of Edinburgh. My research area is natural language processing. 
+
+                <p>You can reach me via Email: parag.jain@ed.ac.uk</p>
                 
                 
                 <!--<b>Office:</b> <strike>School of Informatics, The University of Edinburgh</strike><br></p>-->
@@ -91,21 +82,136 @@ a{
             </div>
         </div>
     </div>
-
+      
+    <!-- bio -->
+    <hr>
     <div class="container">
-    <div class="col-md-3" >
+      <div class="col-md-1" >
+      </div>
+      <div class="col-md-10" id="bio">
+        <h2>Bio</h2>
+        <p>
+          
+          I am a PhD student at the School of Informatics, University of Edinburgh. My advisor is <a href="https://homepages.inf.ed.ac.uk/mlap/"" target="_blank">Prof. Mirella Lapata</a> and my research area is natural language processing. I'm also a part of the CDT in NLP. My current focus is on Discourse Processing in Conversational Semantic Parsing. I am interested in investigating how to represent interaction context (i.e., discourse) in tandem with task dependent context, how to learn such representation automatically, and how to effectively use such representation for end task.
+          <br><br>
+          Before this, I was a research engineer at IBM Research. At IBM, I worked on structured data to text generation. Our focus was developing systems which are <a href="https://direct.mit.edu/coli/article/45/4/737/93360/Scalable-Micro-planned-Generation-of-Discourse" target="_blank">scalable</a> and <a href="https://arxiv.org/abs/1809.04556" target="_blank">controllable</a>. We presented a <a href="https://sites.google.com/view/acl-19-nlg" target="_blank">tutorial</a> at ACL 2019 on this topic. I was worked as a software engineer for Amazon for a year.
+          <br><br>
+          I graduated from the Indian Institute of Technology, Hyderabad with an M.Tech in Computer Science and Engineering where I was advised by <a href="https://www.iith.ac.in/~vineethnb/"" target="_blank">Prof. Vineeth N Balasubramanian</a>. At IITH, I worked on Metric Learning in a streaming data setup. To avoid heavy computation as data arrives, we proposed unsupervised information theoretic metric learning and an incremantal version of diffusion maps. I also worked with <a href="http://www.incois.gov.in/Incois/hrd/employeeprofile.jsp?uid=008" target="_blank">Dr TVS Udaya Bhaskar</a> on ocean biome classification by learning a distance metric for clustering.
+          <br><br>
+          In 2012, I got my bachelor's degree in Computer Science and Engineering from Jabalpur Engineering College where I enjoyed building line following robots 🤖 and configuring routers.
+        
+        </p>
+      </div>
     </div>
-    <div class="col-md-9" id="bio">
-      <h2>Bio</h2>
-      <p>
-        Add some bio here
-        India, officially the Republic of India (Hindi: Bhārat Gaṇarājya),[26] is a country in South Asia. It is the seventh-largest country by area, the second-most populous country, and the most populous democracy in the world. Bounded by the Indian Ocean on the south, the Arabian Sea on the southwest, and the Bay of Bengal on the southeast, it shares land borders with Pakistan to the west;[f] China, Nepal, and Bhutan to the north; and Bangladesh and Myanmar to the east. In the Indian Ocean, India is in the vicinity of Sri Lanka and the Maldives; its Andaman and Nicobar Islands share a maritime border with Thailand, Myanmar and Indonesia. India is the fifth largest economy in the world as per World Bank data in 2022.[27]
+    <hr>
 
-      </p>
-    </div>
+    <!----------news--------------------->
+    
+    <!----------PUBLICATIONS--------------------->
+      <div class="container">
+  
+          <div class="col-md-1" >
+          </div>
+          <div class="col-md-10" id="empty">
+      
+          <div id="pubs"><H1>Publication</H1>
+              <H3>Semantic Parsing / Dialog</H3>
+              <ul>
+                <li><p><a href="https://parajain.github.io/resources/msp-tacl-2021.pdf">Memory-Based Semantic Parsing
+                </a><br/><u>Jain, P.</u>, Lapata, M., (TACL) 2021</p></li>
+                <li><p><a href="https://dl.acm.org/doi/10.1145/3430984.3431011">Bootstrapping Chatbot Interfaces to Databases
+                </a><br/> Mittal, A., Saha, D., <u>Jain, P.</u>, Sen, J., Jammi, M., Sankaranarayanan, K., (8th ACM IKDD CODS and 26th COMAD), 2021</p></li>
+                <li><p><a href="https://www.aclweb.org/anthology/P19-1473.pdf"> Unified Semantic Parsing with Weak Supervision</a>
+                  <br/>Agrawal, P., <u>Jain, P.</u>, Dalmiya, A., Bansal, A. Mittal, A., Sankaranarayanan, K. (ACL 2019) </p></li>
+                  <li><p><a href="http://www.vldb.org/pvldb/vol10/p1965-Danilevsky.pdf">Creation and Interaction with Large-scale Domain-Specific Knowledge Bases</a> <br/>
+                    Bharadwaj, S. et al. [and others, including <u>Jain, P.</u>] (VLDB 2017, Demonstrations Track) <a href="https://vimeo.com/234574627" target="_blank"> [Video]</a> </p></li>
+              </ul>
 
-    </div>
+              <H3>Structured data to text</H3>
+            <ul>
+              <li><p><a href="https://www.mitpressjournals.org/doi/full/10.1162/coli_a_00363?mobileUi=0">Scalable Micro-planned Generation of Discourse from Structured Data</a>
+                <br/> Laha, A.*, <u>Jain, P.*</u>, Mishra, A.*, Sankaranarayanan, K. (Computational Linguistics Journal), 2019</p>
+              <p>&#10024;<a href="https://www.gadgetsnow.com/tech-news/ibms-india-engineers-helped-make-us-open-virtual/articleshow/78018021.cms"><span class="badge bg-success">In news:</span></a> Powering Match Insights for &#127934; <a href="https://www.usopen.org/en_US/scores/schedule/index.html">US Open by interfacing with structured knowledge bases</a></p></li>
+              <li><p><a href="http://aclweb.org/anthology/N18-2098">A Mixed Hierarchical Attention based Encoder-Decoder Approach for Standard Table Summarization</a><br/>
+              <u>Jain, P.</u>, Laha, A., Sankaranarayanan, K., Nema, P., Khapra, M.M. and Shetty, S., (NAACL-HLT 2018) </p></li>
+                <li><p><a href="http://aclweb.org/anthology/N18-1139">Generating Descriptions from Structured Data Using a Bifocal Attention Mechanism and Gated Orthogonalization</a> <br/>
+                Nema, P.*, <u>Jain, P.*</u>, Shetty, S., Laha, A., Sankaranarayanan, K. and Khapra, M.M., (NAACL-HLT 2018) <a href="https://vimeo.com/277348865">[Video]</a></p></li>
+                
 
+                <li><p><a href="https://arxiv.org/pdf/1707.05501">Story Generation from Sequence of Independent Short Descriptions</a> <br/>
+                  <u>Jain, P.</u>, Agrawal, P., Mishra, A., Sukhwani, M., Laha, A. and Sankaranarayanan, K., (SIGKDD Workshop ML4Creativity, 2017) </p></li>
+                </ul>
+              <H3>Controllable text generation</H3>
+              <ul>
+              <li><p><a href="https://arxiv.org/abs/1809.04556">Unsupervised Controllable Text Formalization</a> <br/>
+                <u>Jain, P.</u>, Mishra, A., Azad, A.P. and Sankaranarayanan, K. (AAAI 2019) <a href="https://www.youtube.com/watch?v=2vby-_ndJB8">[Video]</a></p></li>  
+              <li><p><a href="https://arxiv.org/abs/1810.07931">Unsupervised Neural Text Simplification</a> <br/>
+                Surya, S., Mishra, A., Laha, A., <u>Jain, P.</u>, Sankaranarayanan, K. (ACL 2019) </p></li>
+              
+              </ul>
+
+                <H3>Machine Learning</H3>
+                <ul>
+                  <li><p><a href="">Online Active Metric Learning for Clustering</a> <br/> 
+                    <u>Jain, P.</u>, Balasubramanian, V.N. (XRCI OPEN 2016) <a href="http://parajain.github.io/resources/jain-online-active-metric-learning-for-clustering.pdf"> [Poster] </a></p></li>
+                  
+                  <li><p><a href="http://raiith.iith.ac.in/1618/1/CS13M1008.pdf">Metric Learning for Clustering in Streaming Large-Scale Data</a> <br/>
+                    <u>Jain, P.</u> (IIT Hyderabad, 2015) <span class="badge bg-secondary">Thesis</span></p></li>
+                  </ul>
+          </div>
+                
+          <div class="col-md-2" >
+          </div>
+          </div>
+          <div class="col-md-1" >
+          </div>
+      </div>
+      
+      <hr>
+      
+      <!----------TALKS--------------------->
+        <div class="container">
+
+          <div class="col-md-2" >
+          </div>
+
+          <div class="col-md-8" >
+            <div  style="margin-top:3vh; text-align:left;">
+              <div align="justify" id="talks"><H1>Talks and Tutorial<H1></div><br>
+                <ul>
+                  <li><p>Storytelling from Structured Data and Knowledge Graphs : An NLG Perspective</a>, Tutorial ACL 2019 <a href="https://sites.google.com/view/acl-19-nlg" target="_blank">[Website]</a></p></li>
+                  <li><p>Introduction to Machine Learning -  Christ University Bangalore, 2018</p></li>
+                  <li><p>Generating Descriptions from Structured Data NAACL 2018 <a href="https://vimeo.com/277348865">[Video]</a></p></li>
+                  <li><p>Talk on Online Metric learning (IBM Research Bangalore, 2016) <a href="https://parajain.github.io/resources/online_metric_learning_clustering_project_slides.pdf"> [Slides] </a></p></li>
+                </ul>
+              </div>
+          </div>
+
+        </div>
+        <hr>
+
+        <!----------Teaching--------------------->
+        <div class="container">
+
+          <div class="col-md-2" >
+          </div>
+
+          <div class="col-md-8" >
+            <div  style="margin-top:3vh; text-align:left;">
+              <div align="justify" id="teaching"><H1>Teaching<H1></div><br>
+                <ul>
+                  <li><p>Tutor for Natural Language Understanding, Generation, and Machine Translation,  University of Edinburgh (2020-2021) </p></li>
+                  <li><p>TA for Numerical Linear Algebra for Data Analysis (CS5270, 2015), IIT Hyderabad</p></li>
+                <li><p>TA for Introduction to Database Management Systems (CS3010/CS3011, 2014), IIT Hyderabad</p></li>
+                <li><p>TA for Advanced Compiler Design (CS6240, 2014), IIT Hyderabad</p></li>
+              </ul>
+              </div>
+          </div>
+
+        </div>
+        <hr>
+      </div>
+      <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
