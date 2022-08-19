@@ -25,9 +25,12 @@ Parag Jain
 
   <!-- Bootstrap CSS -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
   <!--This is where you can change your style-->
-  <link href="resources/font.css" rel='stylesheet' type='text/css'>
+  <link href="scripts/font.css" rel='stylesheet' type='text/css'>
   </head>
 
 </head>
@@ -47,7 +50,8 @@ Parag Jain
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        
+      <div class=" navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
           <a class="nav-link active" href="#bio">Bio</a>
@@ -58,25 +62,34 @@ Parag Jain
       </div>
     </div>
   </nav>
+
+
+
+  
   
   <!-- Page Content -->
     <div class="container">
         <div class="row">
             <div class="col-md-3" >
-                <img class="img-fluid" src="resources/prof_pic.png" height="400" width="400" alt=""><br>
+                <img class="img-fluid" src="scripts/prof_pic.png" height="400" width="400" alt=""><br>
             </div>
             <div class="col-md-6" >
+              <br><br>
               I am a PhD student at the School of Informatics, University of Edinburgh. My research area is natural language processing. 
 
-                <p>You can reach me via Email: parag.jain@ed.ac.uk</p>
+              <br><br>
+              <p>You can reach me via Email <a href="mailto:parag.jain@ed.ac.uk" target="_blank"><i class="far fa-envelope"></i></a> &nbsp;: parag.jain@ed.ac.uk</p>
                 
                 
                 <!--<b>Office:</b> <strike>School of Informatics, The University of Edinburgh</strike><br></p>-->
                 <!--<dd><a href="http://parajain.github.io/" target="_blank">CV</a></dd>-->
-                <dd><a href="https://www.linkedin.com/in/paragjain1" target="_blank">LinkedIn</a></dd>
-                <dd><a href="https://twitter.com/jparag123" target="_blank">Twitter</a></dd>
-                <dd><a href="https://github.com/parajain/" target="_blank">GitHub</a></dd>
-                <dd><a href="https://scholar.google.com/citations?hl=en&user=I6FyhVYAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a></dd>
+            
+
+
+                <a href="https://www.linkedin.com/in/paragjain1" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a> &nbsp;
+                <a href="https://twitter.com/jparag123" target="_blank"><i class="fab fa-twitter fa-2x"></i></a> &nbsp;
+                <a href="https://github.com/parajain/" target="_blank"><i class="fab fa-github fa-2x"></i></a> &nbsp;
+                <a href="https://scholar.google.com/citations?hl=en&user=I6FyhVYAAAAJ&view_op=list_works&sortby=pubdate" target="_blank"><i class="fas fa-university fa-2x"></i></a>
                 </p>
 
             </div>
@@ -94,11 +107,11 @@ Parag Jain
           
           I am a PhD student at the School of Informatics, University of Edinburgh. My advisor is <a href="https://homepages.inf.ed.ac.uk/mlap/" target="_blank">Prof. Mirella Lapata</a> and my research area is natural language processing. I'm also a part of the CDT in NLP. My current focus is on Discourse Processing in Conversational Semantic Parsing. I am interested in investigating how to represent interaction context (i.e., discourse) in tandem with task dependent context, how to learn such representation automatically, and how to effectively use such representation for end task.
           <br><br>
-          Before this, I was a research engineer at IBM Research. At IBM, I worked on structured data to text generation. Our focus was developing systems which are <a href="https://direct.mit.edu/coli/article/45/4/737/93360/Scalable-Micro-planned-Generation-of-Discourse" target="_blank">scalable</a> and <a href="https://arxiv.org/abs/1809.04556" target="_blank">controllable</a>. We presented a <a href="https://sites.google.com/view/acl-19-nlg" target="_blank">tutorial</a> at ACL 2019 on this topic. In also worked as a software engineer for Amazon for a year.
+          Before this, I was a research engineer at IBM Research. At IBM, I worked on structured data to text generation. Our focus was developing systems which are <a href="https://direct.mit.edu/coli/article/45/4/737/93360/Scalable-Micro-planned-Generation-of-Discourse" target="_blank">scalable</a> and <a href="https://arxiv.org/abs/1809.04556" target="_blank">controllable</a>. We presented a <a href="https://sites.google.com/view/acl-19-nlg" target="_blank">tutorial</a> at ACL 2019 on this topic. I also worked as a software engineer at Amazon for a year.
           <br><br>
-          I graduated from the Indian Institute of Technology, Hyderabad with an M.Tech in Computer Science and Engineering where I was advised by <a href="https://www.iith.ac.in/~vineethnb/"" target="_blank">Prof. Vineeth N Balasubramanian</a>. At IITH, I worked on Metric Learning in a streaming data setup. To avoid heavy computation as data arrives, we proposed unsupervised information theoretic metric learning and an incremantal version of diffusion maps. I also worked with <a href="http://www.incois.gov.in/Incois/hrd/employeeprofile.jsp?uid=008" target="_blank">Dr TVS Udaya Bhaskar</a> on ocean 🌊 biome classification by learning a distance metric for clustering.
+          I graduated from the Indian Institute of Technology, Hyderabad with an M.Tech in Computer Science and Engineering where I was advised by <a href="https://www.iith.ac.in/~vineethnb/"" target="_blank">Prof. Vineeth N Balasubramanian</a>. At IITH, I worked on Metric Learning in a streaming data setup. To avoid heavy computation as data arrives, we proposed unsupervised information theoretic metric learning and an incremental version of diffusion maps. I also worked with <a href="http://www.incois.gov.in/Incois/hrd/employeeprofile.jsp?uid=008" target="_blank">Dr TVS Udaya Bhaskar</a> on ocean 🌊 biome classification by learning a distance metric for clustering.
           <br><br>
-          In 2012, I got my bachelor's degree in Computer Science and Engineering from Jabalpur Engineering College where I enjoyed building line following robots 🤖 and configuring routers.
+          In 2012, I got my undergraduate degree in Computer Science from Jabalpur Engineering College where I enjoyed building line (<i class="fas fa-grip-lines-vertical"></i>) following robots <i class="fas fa-robot" style='color:rgb(240, 30, 30)'></i> and configuring routers.
           
           <br><br>
           When I am not in working, I enjoy listening to <a href="https://www.darbar.org/" target="_blank">Indian Classical Music</a> or play violin 🎻. 
@@ -181,6 +194,8 @@ Parag Jain
             <div  style="margin-top:3vh; text-align:left;">
               <div align="justify" id="talks"><H1>Talks and Tutorial<H1></div><br>
                 <ul>
+                  <li><p>(Invited Talk) Conversational Semantic Parsing - Online International. Conference. On. Advances in Physical, Mathematical and
+                    Computational Sciences, India - 2022</p></li>
                   <li><p>Storytelling from Structured Data and Knowledge Graphs : An NLG Perspective</a>, Tutorial ACL 2019 <a href="https://sites.google.com/view/acl-19-nlg" target="_blank">[Website]</a></p></li>
                   <li><p>Introduction to Machine Learning -  Christ University Bangalore, 2018</p></li>
                   <li><p>Generating Descriptions from Structured Data NAACL 2018 <a href="https://vimeo.com/277348865">[Video]</a></p></li>
@@ -213,7 +228,9 @@ Parag Jain
         </div>
         <hr>
       </div>
-      <script type="text/javascript" src="script.js"></script>
-</body>
+      
+      
+      <script type="text/javascript" src="scripts/script.js"></script>  
+    </body>
 
 </html>
