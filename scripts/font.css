@@ -54,6 +54,12 @@ blockquote {
     border-color: black;
   }
 
+  div.newsscrool {
+    background-color: rgb(245, 244, 244);
+    height: 70px;
+    overflow-y: auto;
+  }
+
   hr {
     display: block;
     margin-top: 2.5em;
