@@ -24,3 +24,11 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+//over sample my own pic to avoid annoying visitors :D
+var myimages = ['pic_from_arthurs_seat.jpeg', 'prof_pic.png', 'prof_pic1.jpg', 'prof_pic1.jpg', 'prof_pic1.jpg', 'pic_to_arthurs_seat.jpeg'];
+document.getElementById("profile-pic").src = "pictures/"+myimages[getRandomInt(myimages.length)];
