@@ -13,34 +13,93 @@ Parag Jain
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'UA-142120882-1');
   </script>
 
   <title>पराग जैन</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
 
   <!-- Bootstrap CSS -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!--This is where you can change your style-->
-  <link href="scripts/font.css" rel='stylesheet' type='text/css'>
-</head>
 
+  <link href="scripts/font.css" rel='stylesheet' type='text/css'>
+  <style>
+    body { background-color: #f7f6f6; }
+    h1 { font-size: 1.5rem; }
+    a { color: inherit; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: #9ca3af; }
+    a:hover { text-decoration-color: #374151; }
+    /* Paper title: larger, bold, dark */
+    #pubs ul li p > a:first-child {
+      font-size: 1.08em;
+      color: #111827;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: #9ca3af;
+    }
+    #pubs ul li p > a:first-child:hover {
+      text-decoration-color: #374151;
+    }
+    /* In news + article link badges */
+    #pubs .badge.bg-success {
+      background: #bcddbc !important;
+      color: #000603 !important;
+      border: 1px solid #fdfffe;
+      font-weight: 600;
+    }
+    /* [Code], [Video] etc pill badges */
+    .pub-link {
+      display: inline-block;
+      font-size: 0.88em;
+      color: #2563eb !important;
+      text-decoration: none !important;
+      margin-right: 6px;
+    }
+    .pub-link:hover {
+      color: #1e40af !important;
+      text-decoration: underline !important;
+    }
+    mark {
+      background: #ffedd1;
+      color: #92400e;
+      font-weight: 600;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 0.8em;
+      letter-spacing: 0.03em;
+    }
+    .kw {
+      display: inline-block;
+      background: #fffdf8;
+      color: #4f5c6e;
+      border: 1px solid #e0e7ff;
+      font-size: 0.74em;
+      padding: 2px 9px;
+      border-radius: 99px;
+      margin-right: 4px;
+      margin-top: 4px;
+    }
+    #btn-back-to-top {
+      background-color: #1e40af;
+      border-color: #1e40af;
+    }
+    #btn-back-to-top:hover {
+      background-color: #1e3a8a;
+      border-color: #1e3a8a;
+    }
+    #pubs ul { padding-left: 0; }
+    #pubs ul li { list-style: none; padding: 0.6rem 0; border-bottom: 1px solid #ebebeb; }
+    #pubs ul li:last-child { border-bottom: none; }
+  </style>
 </head>
 
 <body>
-  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+  <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
     <i class="fas fa-arrow-up"></i>
   </button>
-
 
   <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
     <div class="container-fluid">
@@ -49,60 +108,303 @@ Parag Jain
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class=" navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <!--<a class="nav-link active" href="bio.html">Bio</a>-->
-          <a class="nav-link active" href="https://scholar.google.com/citations?hl=en&user=I6FyhVYAAAAJ">Publication</a>
+          <a class="nav-link active" href="#pubs">Publications</a>
           <a class="nav-link active" href="#talks">Talks and Tutorials</a>
           <a class="nav-link active" href="#teaching">Teaching</a>
+          <a class="nav-link active" href="#">Resume</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <br> <br>
+  <br><br>
   <!-- Page Content -->
   <div class="container">
     <div class="row">
       <div class="col-md-3">
         <img class="img-fluid" src="pictures/prof_1.jpeg" height="400" width="400" alt=""><br>
-        <!--<img class="img-fluid" id="profile-pic" height="400" width="400" alt=""><br>-->
       </div>
       <div class="col-md-6">
         <br><br>
-        I'm a Research scientist at Meta working in post-training/RL/Agents. <br><br>
+        I'm a Research Scientist at Meta working in post-training/RL/Agents. <br><br>
         Before that I did my PhD in NLP at Edinburgh, supervised by <a
-          href="https://homepages.inf.ed.ac.uk/mlap/index.php?page=index"> Prof. Mirella Lapata. </a>
-          <br>
-          <b>Previous affiliations</b>: Google DeepMind, IBMResearch, Amazon.
+          href="https://homepages.inf.ed.ac.uk/mlap/">Prof. Mirella Lapata.</a>
+        <br>
+        <b>Previous affiliations</b>: Google DeepMind, IBM Research, Amazon.
         <br><br>
-        <!-- <p>You can reach me via Email <a href="mailto:parag.jain@ed.ac.uk" target="_blank"><i
-              class="far fa-envelope"></i></a> &nbsp;: parag.jain@ed.ac.uk</p>
-        <br> -->
-
-        <!--<b>Office:</b> <strike>School of Informatics, The University of Edinburgh</strike><br></p>-->
-        <!--<dd><a href="http://parajain.github.io/" target="_blank">CV</a></dd>-->
-
-
 
         <a href="https://www.linkedin.com/in/paragjain1" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
         &nbsp;
-        <!--<a href="https://twitter.com/intent/follow?user_id=jparag123&screen_name=jparag123" target="_blank"><i class="fab fa-twitter fa-2x"></i></a> &nbsp;-->
         <a href="https://twitter.com/jparag123" target="_blank"><i class="fab fa-twitter fa-2x"></i></a> &nbsp;
         <a href="https://github.com/parajain/" target="_blank"><i class="fab fa-github fa-2x"></i></a> &nbsp;
         <a href="https://scholar.google.com/citations?hl=en&user=I6FyhVYAAAAJ" target="_blank"><i
             class="fas fa-university fa-2x"></i></a>
-        <!-- <a href="https://parajain.github.io/resources/parag_jain_cv.pdf" target="_blank"><i class="fa fa-file-pdf fa-2x"></i></a> -->
-
-        </p>
-
       </div>
     </div>
   </div>
 
-  
+  <br><br>
+
+  <!----------PUBLICATIONS--------------------->
+  <div class="container">
+    <div class="col-md-1"></div>
+    <div class="col-md-10" id="empty">
+      <div id="pubs">
+        <H1>Selected Publications</H1>
+        <p>* indicates equal contribution</p>
+        <p><a href="https://scholar.google.com/citations?hl=en&user=I6FyhVYAAAAJ&view_op=list_works&sortby=pubdate">Full list on Google Scholar.</a></p>
+
+        <ul>
+          <li>
+            <p><a href="https://arxiv.org/abs/2512.23707">Training AI Co-Scientists Using Rubric Rewards</a>
+              <br />Shashwat Goel, Rishi Hazra, Dulhan Jayalath, Timon Willi, <b>Parag Jain</b>, William F. Shen, Ilias Leontiadis
+              <br>ICML 2025 <a href="https://huggingface.co/datasets/facebook/research-plan-gen">[HuggingFace Dataset]</a>
+              <br><mark>TLDR</mark> We build a scalable, diverse training corpus by automatically extracting research goals and goal-specific grading rubrics from papers across several domains. Using these rubrics as rewards, we train models for research plan generation via reinforcement learning with self-grading.
+              <br><span class="kw">reinforcement learning</span><span class="kw">reward modeling</span><span class="kw">AI Scientist</span>
+            </p>
+          </li>
+
+          <li>
+            <p><a href="https://arxiv.org/abs/2509.14234">Compute as Teacher: Turning Inference Compute Into Reference-Free Supervision</a>
+              <br />Dulhan Jayalath, Shashwat Goel, Thomas Foster, <b>Parag Jain</b>, Suchin Gururangan, Cheng Zhang, Anirudh Goyal, Alan Schelten
+              <br>ICML 2025
+              <br><mark>TLDR</mark> Where do learning signals come from when there's no ground truth ? Convert the model's exploration at inference time into reference free supervision.
+              <br><span class="kw">reinforcement learning</span><span class="kw">inference compute</span><span class="kw">self-improvement</span>
+            </p>
+          </li>
+
+          <li>
+            <p><a href="https://arxiv.org/abs/2509.19284">What Characterizes Effective Reasoning? Revisiting Length, Review, and Structure of CoT</a>
+              <br />Yunzhen Feng, Julia Kempe, Cheng Zhang, <b>Parag Jain</b>, Anthony Hartshorn
+              <br>ICML 2025
+              <br><mark>TLDR</mark> We study what makes chain-of-thought reasoning effective, finding that length, self-review, and structural properties of reasoning traces each play distinct roles in reasoning quality.
+              <br><span class="kw">chain-of-thought</span><span class="kw">reasoning</span><span class="kw">RL post-training</span>
+            </p>
+          </li>
+
+          <li>
+            <p><a href="https://arxiv.org/abs/2510.08696">Don't Waste Mistakes: Leveraging Negative RL-Groups via Confidence Reweighting</a>
+              <br />Yunzhen Feng, <b>Parag Jain</b>, Anthony Hartshorn, Yaqi Duan, Julia Kempe
+              <br>2025
+              <br><mark>TLDR</mark> GRPO wastes compute on negative groups. We derive LENS (Likelihood Estimation with Negative Samples), which assigns confidence-weighted penalties to incorrect responses, making negative groups informative and converting wasted samples into useful gradient updates.
+              <br><span class="kw">reinforcement learning</span><span class="kw">negative samples</span><span class="kw">GRPO</span>
+            </p>
+          </li>
+
+          <li>
+            <p><a href="https://arxiv.org/abs/2601.11659">The Llama 4 Herd: The Beginning of a New Era of Natively Multimodal AI Innovation</a>
+              <br />Meta AI
+              <br>2025
+              <br><span class="kw">multimodal</span><span class="kw">foundation model</span><span class="kw">LLM</span>
+            </p>
+          </li>
+
+          <li>
+            <p><a href="https://parajain.github.io/resources/jain_Integratingllm_with_Graphbased_ReasoningforConversationalQuestionAnswering.pdf">Integrating Large Language Models with Graph-based Reasoning for Conversational Question Answering</a>
+              <br /><b>Parag Jain</b>, Mirella Lapata
+              <br>Under Review, 2024
+              <br><mark>TLDR</mark> We present a method to aggregate evidence from multiple sources into a dynamic graph for conversational question answering, efficiently integrating it with LLMs for end-to-end training. Past evidence is tracked in a memory module, which updates as the conversation evolves to influence the graph structure and representation.
+              <br><span class="kw">LLM</span><span class="kw">knowledge graph</span><span class="kw">conversational QA</span>
+            </p>
+          </li>
+
+          <li>
+            <p><a href="https://arxiv.org/abs/2401.06837">Structsum Generation for Faster Text Comprehension</a>
+              <br /><b>Parag Jain</b>, Andreea Marzoca, Francesco Piccinno
+              <br>ACL 2024
+              <br><mark>TLDR</mark> We explore generating structured representations (Mind Maps 🧠 🗺 and Tables 📝) of text using LLMs. Via a user study, we show that structured representations reduce comprehension time for users compared to just plain text.
+              <br><span class="kw">summarization</span><span class="kw">structured representations</span><span class="kw">LLM</span><span class="kw">user study</span>
+            </p>
+          </li>
+
+          <li>
+            <p><a href="https://parajain.github.io/resources/emnlp2023_jain.pdf">Conversational Semantic Parsing using Dynamic Context Graphs</a>
+              <br /><b>Parag Jain</b>, Mirella Lapata
+              <br>EMNLP 2023 <a href="https://github.com/parajain/dynamic_context">[Code]</a>
+              <br><mark>TLDR</mark> We model knowledge graph (KG) context as a dynamic context graph and implement a scalable method for context-dependent type linking. Our approach demonstrates improved performance on the <a href="https://arxiv.org/abs/2301.12217">SPICE</a> dataset, which requires understanding long-range context.
+              <br><span class="kw">semantic parsing</span><span class="kw">knowledge graph</span><span class="kw">conversational</span>
+            </p>
+          </li>
+
+          <li>
+            <p><a href="https://parajain.github.io/resources/spice.pdf">Semantic Parsing for Conversational Question Answering over Knowledge Graphs</a>
+              <br />Laura Perez-Beltrachini, <b>Parag Jain</b>, Emilio Monti, Mirella Lapata
+              <br>EACL 2023 <a href="https://github.com/EdinburghNLP/SPICE">[Dataset and Code]</a>
+              <br><mark>TLDR</mark> We create SPICE, a semantic parsing dataset for conversational question answering over Wikidata.
+              <br><span class="kw">semantic parsing</span><span class="kw">Wikidata</span><span class="kw">dataset</span><span class="kw">conversational QA</span>
+            </p>
+          </li>
+
+          <li>
+            <p><a href="https://aclanthology.org/2023.acl-short.13.pdf">Multi-Document Summarization with Centroid-Based Pretraining</a>
+              <br />Ratish Puduppully, <b>Parag Jain</b>, Nancy F. Chen, Mark Steedman
+              <br>ACL 2023 <a href="https://huggingface.co/ratishsp/Centrum">[Code]</a>
+              <br><mark>TLDR</mark> We introduce a novel pretraining objective for multi-document summarization, which involves selecting the ROUGE-based centroid of each document cluster as a proxy for its summary.
+              <br><span class="kw">summarization</span><span class="kw">pretraining</span><span class="kw">multi-document</span>
+            </p>
+          </li>
+
+          <li>
+            <p><a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00422/108200/Memory-Based-Semantic-Parsing">Memory-Based Semantic Parsing</a>
+              <br /><b>Parag Jain</b>, Mirella Lapata
+              <br>TACL 2021 &mdash; <a href="https://aclanthology.org/2021.tacl-1.71.mp4">[Video]</a> <a href="https://worksheets.codalab.org/worksheets/0xbd49d04e5a494a978642bbaf028b659b">[Code]</a>
+              <br><mark>TLDR</mark> We propose to represent discourse information using a bounded external memory. Bounded memory helps process long interactions irrespective of conversation-length. Our memory is interpretable and is managed by a learned controller.
+              <br><span class="kw">semantic parsing</span><span class="kw">external memory</span><span class="kw">dialogue</span>
+            </p>
+          </li>
+
+          <!-- <li>
+            <p><a href="https://dl.acm.org/doi/10.1145/3430984.3431011">Bootstrapping Chatbot Interfaces to Databases</a>
+              <br />Ashish Mittal, Diptikalyan Saha, <b>Parag Jain</b>, Jaydeep Sen, Manasa Jammi, Karthik Sankaranarayanan
+              <br>8th ACM IKDD CODS and 26th COMAD, 2021
+              <br><span class="kw">chatbot</span><span class="kw">database</span><span class="kw">natural language interface</span>
+            </p>
+          </li> -->
+
+          <li>
+            <p><a href="https://www.aclweb.org/anthology/P19-1473.pdf">Unified Semantic Parsing with Weak Supervision</a>
+              <br />Priyanka Agrawal, <b>Parag Jain</b>, Ayushi Dalmia, Abhishek Bansal, Ashish Mittal, Karthik Sankaranarayanan
+              <br>ACL 2019 <a href="https://github.com/pagrawal-ml/Unified-Semantic-Parsing">[Code]</a>
+              <br><mark>TLDR</mark> We propose a <em>multi-policy distillation</em> based method for learning a unified semantic parser (student) using independent weakly supervised experts (teacher) for each domain. Individual experts are trained using the REINFORCE to maximize the expected denotation accuracy.
+              <br><span class="kw">semantic parsing</span><span class="kw">weak supervision</span><span class="kw">multi-task</span><span class="kw">reinforcement learning</span>
+            </p>
+          </li>
+
+          <li>
+            <p><a href="https://www.mitpressjournals.org/doi/full/10.1162/coli_a_00363?mobileUi=0">Scalable Micro-planned Generation of Discourse from Structured Data</a>
+              <br />Anirban Laha*, <b>Parag Jain*</b>, Abhijit Mishra, Karthik Sankaranarayanan
+              <br>Computational Linguistics Journal, 2019 &mdash; <a href="https://github.com/parajain/structscribe">[Code]</a>
+              <br><mark>TLDR</mark> A modular, pipeline-based approach for structured data to text. Our framework does not require task-specific parallel data.
+              <br><span class="kw">data-to-text</span><span class="kw">NLG</span><span class="kw">structured data</span>
+            </p>
+            <p>&#10024;<a href="https://www.gadgetsnow.com/tech-news/ibms-india-engineers-helped-make-us-open-virtual/articleshow/78018021.cms"><span class="badge bg-success">In news:</span></a>
+              Powering Match Insights for &#127934;
+              <a href="https://www.usopen.org/en_US/scores/schedule/index.html">US Open by interfacing with structured knowledge bases.</a>
+              <a href="https://www.gadgetsnow.com/tech-news/ibms-india-engineers-helped-make-us-open-virtual/articleshow/78018021.cms"><span class="badge bg-success">TOI Gadgetsnow</span></a>
+              <a href="https://newsroom.ibm.com/US-Open-AI-Tennis-Fan-Engagement"><span class="badge bg-success">IBM Article</span></a>
+            </p>
+          </li>
+
+          <li>
+            <p><a href="https://arxiv.org/abs/1809.04556">Unsupervised Controllable Text Formalization</a>
+              <br /><b>Parag Jain</b>, Abhijit Mishra, Amar Prakash Azad, Karthik Sankaranarayanan
+              <br>AAAI 2019 <a href="https://www.youtube.com/watch?v=2vby-_ndJB8">[Video]</a> &mdash; <a href="https://github.com/parajain/uctf">[Code]</a>
+              <br><mark>TLDR</mark> Wake-sleep style algorithm for learning a controllable style transfer model in an unsupervised manner.
+              <br><span class="kw">style transfer</span><span class="kw">unsupervised</span><span class="kw">text formalization</span>
+            </p>
+          </li>
+
+          <li>
+            <p><a href="https://arxiv.org/abs/1810.07931">Unsupervised Neural Text Simplification</a>
+              <br />Sai Surya, Abhijit Mishra, Anirban Laha, <b>Parag Jain</b>, Karthik Sankaranarayanan
+              <br>ACL 2019 <a href="https://github.com/subramanyamdvss/UnsupNTS">[Code]</a>
+              <br><mark>TLDR</mark> Adversarial loss based method for lexical and syntactic simplification without using parallel data.
+              <br><span class="kw">text simplification</span><span class="kw">adversarial training</span><span class="kw">unsupervised</span>
+            </p>
+          </li>
+
+          <li>
+            <p><a href="http://aclweb.org/anthology/N18-2098">A Mixed Hierarchical Attention based Encoder-Decoder Approach for Standard Table Summarization</a>
+              <br /><b>Parag Jain</b>, Anirban Laha, Karthik Sankaranarayanan, Preksha Nema, Mitesh M Khapra, Shreyas Shetty
+              <br>NAACL-HLT 2018 <a href="https://github.com/PrekshaNema25/StructuredData_To_Descriptions">[Code]</a>
+              <br><mark>TLDR</mark> Efficient hierarchical attention model for table-to-text with known table schema.
+              <br><span class="kw">table-to-text</span><span class="kw">hierarchical attention</span><span class="kw">NLG</span>
+            </p>
+          </li>
+
+          <li>
+            <p><a href="http://aclweb.org/anthology/N18-1139">Generating Descriptions from Structured Data Using a Bifocal Attention Mechanism and Gated Orthogonalization</a>
+              <br />Preksha Nema*, Shreyas Shetty*, <b>Parag Jain*</b>, Anirban Laha, Karthik Sankaranarayanan, Mitesh M Khapra
+              <br>NAACL-HLT 2018 <a href="https://vimeo.com/277348865">[Video]</a> &mdash; <a href="https://github.com/PrekshaNema25/StructuredData_To_Descriptions">[Code]</a>
+              <br><mark>TLDR</mark> Propose a method to induce stay-on and never-look-back behavior for structured data summarization.
+              <br><span class="kw">data-to-text</span><span class="kw">bifocal attention</span><span class="kw">NLG</span>
+            </p>
+          </li>
+
+          <!-- <li>
+            <p><a href="https://arxiv.org/pdf/1707.05501">Story Generation from Sequence of Independent Short Descriptions</a>
+              <br /><b>Parag Jain</b>, Priyanka Agrawal, Abhijit Mishra, Mohak Sukhwani, Anirban Laha, Karthik Sankaranarayanan
+              <br>SIGKDD ML4Creativity, 2017
+              <br><span class="kw">story generation</span><span class="kw">NLG</span><span class="kw">creative AI</span>
+            </p>
+          </li> -->
+
+          <!-- <li>
+            <p><a href="http://www.vldb.org/pvldb/vol10/p1965-Danilevsky.pdf">Creation and Interaction with Large-scale Domain-Specific Knowledge Bases</a>
+              <br />Shreyas Bharadwaj et al. [and others, including <b>Parag Jain</b>]
+              <br>VLDB 2017 <a href="https://vimeo.com/234574627" target="_blank">[Video]</a>
+              <br><span class="kw">knowledge base</span><span class="kw">information extraction</span>
+            </p>
+          </li> -->
+
+          <!-- <li>
+            <p><a href="http://parajain.github.io/resources/jain-online-active-metric-learning-for-clustering.pdf">Online Active Metric Learning for Clustering</a>
+              <br /><b>Parag Jain</b>, Vineeth N. Balasubramanian
+              <br>XRCI OPEN 2016 <a href="http://parajain.github.io/resources/jain-online-active-metric-learning-for-clustering.pdf">[Poster]</a>
+              <br><span class="kw">metric learning</span><span class="kw">active learning</span><span class="kw">clustering</span>
+            </p>
+          </li> -->
+
+          <li>
+            <p><a href="https://era.ed.ac.uk/handle/1842/43728">Explicit Context Representations for Conversational Language Understanding</a>
+              <br /><b>Parag Jain</b>
+              <br>University of Edinburgh, 2025 <span class="badge bg-secondary">PhD Thesis</span>
+              <br><span class="kw">conversational AI</span><span class="kw">semantic parsing</span><span class="kw">context representation</span>
+            </p>
+          </li>
+
+          <li>
+            <p><a href="http://raiith.iith.ac.in/1618/1/CS13M1008.pdf">Metric Learning for Clustering in Streaming Large-Scale Data</a>
+              <br /><b>Parag Jain</b>
+              <br>IIT Hyderabad, 2015 <span class="badge bg-secondary">Thesis</span>
+              <br><mark>TLDR</mark> Efficient methods for metric learning in streaming data scenarios. We extend diffusion maps for incremental data using incremental SVD. Additionally, we propose an unsupervised information-theoretic metric learning method based on laplacian eigenmaps.
+              <br><span class="kw">metric learning</span><span class="kw">clustering</span><span class="kw">streaming data</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+
+  <hr>
+
+  <!----------Teaching--------------------->
+  <div class="container">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div style="margin-top:3vh; text-align:left;">
+        <div align="justify" id="teaching">
+          <H1>Teaching</H1>
+        </div><br>
+        <ul>
+          <li>
+            <p>Tutor for Natural Language Understanding, Generation, and Machine Translation, University of Edinburgh (2020&ndash;2021)</p>
+          </li>
+          <li>
+            <p>TA for Numerical Linear Algebra for Data Analysis (CS5270, 2015), IIT Hyderabad</p>
+          </li>
+          <li>
+            <p>TA for Introduction to Database Management Systems (CS3010/CS3011, 2014), IIT Hyderabad</p>
+          </li>
+          <li>
+            <p>TA for Advanced Compiler Design (CS6240, 2014), IIT Hyderabad</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <script>
+    document.querySelectorAll('#pubs a').forEach(a => {
+      if (a.textContent.trim().match(/^\[.+\]$/)) a.classList.add('pub-link');
+    });
+  </script>
   <script type="text/javascript" src="scripts/script.js"></script>
 
 </body>
