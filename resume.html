@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Parag Jain — Resume</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="scripts/font.css" rel='stylesheet' type='text/css'>
+  <style>
+    /* body { background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf0 100%); min-height: 100vh; } */
+    body { background-color: #f7f6f6; }
+    h2 { font-size: 1.1rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #374151; margin-bottom: 1.4rem; }
+    a { color: inherit; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: #9ca3af; }
+    a:hover { text-decoration-color: #374151; }
+
+    /* Timeline */
+    .timeline { position: relative; padding-left: 1.6rem; }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 5px;
+      top: 6px;
+      bottom: 0;
+      width: 2px;
+      background: #d1d5db;
+    }
+    .tl-item { position: relative; margin-bottom: 1.8rem; }
+    .tl-dot {
+      position: absolute;
+      left: -1.45rem;
+      top: 5px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #1e40af;
+      border: 2px solid #f5f7fa;
+      box-shadow: 0 0 0 2px #1e40af;
+    }
+    .tl-dot.edu { background: #0f766e; box-shadow: 0 0 0 2px #0f766e; }
+    .tl-date { font-size: 0.75em; color: #9ca3af; font-weight: 600; margin-bottom: 2px; letter-spacing: 0.02em; }
+    .tl-title { font-weight: 700; color: #111827; font-size: 0.97em; }
+    .tl-org { color: #374151; font-size: 0.88em; }
+    .tl-desc { color: #6b7280; font-size: 0.83em; margin-top: 3px; }
+
+    /* Section card */
+    .section-card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.6rem 1.8rem;
+      margin-bottom: 1.4rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+
+    /* Tag pills */
+    .tag {
+      display: inline-block;
+      background: #f3f4f6;
+      color: #374151;
+      font-size: 0.72em;
+      padding: 2px 9px;
+      border-radius: 99px;
+      margin-right: 4px;
+      margin-top: 4px;
+      border: 1px solid #e5e7eb;
+    }
+
+    /* Awards list */
+    .award-item { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; font-size: 0.87em; color: #374151; padding: 4px 0; border-bottom: 1px solid #f3f4f6; }
+    .award-item:last-child { border-bottom: none; }
+    .award-year { color: #9ca3af; font-size: 0.85em; white-space: nowrap; flex-shrink: 0; }
+
+    /* Name header */
+    .hero { padding: 2.4rem 0 1.6rem; }
+    .hero h1 { font-size: 2rem; font-weight: 800; color: #111827; margin-bottom: 0.3rem; }
+    .hero .role { font-size: 1rem; color: #6b7280; margin-bottom: 1rem; }
+    .hero .links a { color: #374151; margin-right: 1rem; font-size: 0.88em; text-decoration: none; }
+    .hero .links a:hover { color: #1e40af; }
+    .hero .links i { margin-right: 4px; }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Parag Jain</a>
+      <div class="navbar-nav">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link active" href="index.html#pubs">Publications</a>
+        <a class="nav-link active" href="#">Resume</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="max-width:860px;">
+
+    <!-- Hero -->
+    <div class="hero">
+      <h1>Parag Jain</h1>
+      <div class="role">AI Research Scientist &middot; Post-training &middot; RL &middot; Long-Running Agents</div>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/paragjain1" target="_blank"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
+        <a href="https://twitter.com/jparag123" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+        <a href="https://github.com/parajain/" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=I6FyhVYAAAAJ" target="_blank"><i class="fas fa-university"></i>Scholar</a>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- Left column -->
+      <div class="col-md-7">
+
+        <!-- Experience -->
+        <div class="section-card">
+          <h2>Experience</h2>
+          <div class="timeline">
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">2025 &mdash; Present</div>
+              <div class="tl-title">AI Research Scientist</div>
+              <div class="tl-org">Meta Superintelligence Labs</div>
+              <div class="tl-desc">Post-training, RL, and Long-Running Agents.</div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">2024</div>
+              <div class="tl-title">Research Assistant</div>
+              <div class="tl-org">University of Edinburgh</div>
+              <div class="tl-desc">Multi-Turn Reasoning.</div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">2023</div>
+              <div class="tl-title">Student Researcher</div>
+              <div class="tl-org">Google DeepMind</div>
+              <div class="tl-desc">Synthetic data generation.</div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">2016 &mdash; 2019</div>
+              <div class="tl-title">Research Engineer</div>
+              <div class="tl-org">IBM Research</div>
+              <div class="tl-desc">Self-training. Unsupervised Learning. Multiple patents. Work deployed at US Open 2020.</div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">2015 &mdash; 2016</div>
+              <div class="tl-title">Software Development Engineer</div>
+              <div class="tl-org">Amazon</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Teaching -->
+        <div class="section-card">
+          <h2>Teaching</h2>
+          <div class="timeline">
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">2021</div>
+              <div class="tl-title">Tutor</div>
+              <div class="tl-org">University of Edinburgh</div>
+              <div class="tl-desc">NL Understanding, Generation, and Machine Translation.</div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">2013 &mdash; 2015</div>
+              <div class="tl-title">Teaching Assistant</div>
+              <div class="tl-org">IIT Hyderabad</div>
+              <div class="tl-desc">Numerical Linear Algebra, DBMS, Advanced Compiler Design.</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section-card">
+          <h2>Education</h2>
+          <div class="timeline">
+
+            <div class="tl-item">
+              <div class="tl-dot edu"></div>
+              <div class="tl-date">2025</div>
+              <div class="tl-title">PhD, Natural Language Processing</div>
+              <div class="tl-org">University of Edinburgh &middot; CDT-NLP</div>
+              <div class="tl-desc">Advisor: <a href="https://homepages.inf.ed.ac.uk/mlap/">Prof. Mirella Lapata</a><br>
+                Thesis: Explicit context representations for conversational language understanding.<br>
+                Scholarship by Huawei and UKRI.
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot edu"></div>
+              <div class="tl-date">2015</div>
+              <div class="tl-title">Computer Science and Engineering</div>
+              <div class="tl-org">IIT Hyderabad</div>
+              <div class="tl-desc">Advisor: <a href="https://people.iith.ac.in/vineethnb/"></a>Prof. Vineeth N Balasubramanian.<br>
+                Thesis: Metric Learning for Clustering in Streaming Large-Scale Data. Awarded A+.
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right column -->
+      <div class="col-md-5">
+
+        
+
+        
+
+        <!-- Invited Talks -->
+        <div class="section-card">
+          <h2>Invited Talks</h2>
+          <div class="award-item">Generating and Reasoning over Structured Data, Amazon AGI <span class="award-year">2025</span></div>
+          <div class="award-item">Generating and Reasoning over Structured Data, META FAIR <span class="award-year">2024</span></div>
+          <div class="award-item">Structsum Generation using LLMs, IIT Hyderabad <span class="award-year">2024</span></div>
+          <div class="award-item">Guest Lecture, Jabalpur Engineering College <span class="award-year">2023</span></div>
+          <div class="award-item">Conversational Semantic Parsing, ICAPMCS India <span class="award-year">2022</span></div>
+          <div class="award-item">Introduction to ML, Christ University Bangalore <span class="award-year">2018</span></div>
+          <div class="award-item">Metric Learning, IBM Bangalore <span class="award-year">2016</span></div>
+        </div>
+
+        <!-- Tutorials -->
+        <div class="section-card">
+          <h2>Conference Tutorials</h2>
+          <div class="award-item">Structured Data Summarization <span class="award-year">2019</span></div>
+          <div style="font-size:0.82em; color:#6b7280; margin-top:2px;">3-hour tutorial at ACL 2019, Florence, Italy.</div>
+        </div>
+
+        <!-- Selected Awards -->
+         <!--
+        <div class="section-card">
+          <h2>Awards</h2>
+          <div class="award-item">Travel Award, Google DeepMind (ACL 2024) <span class="award-year">2024</span></div>
+          <div class="award-item">Scholarship, Huawei &amp; UKRI <span class="award-year">2019–23</span></div>
+          <div class="award-item">IBM First &amp; Second Invention Plateau Award <span class="award-year">2019</span></div>
+          <div class="award-item">Travel Award, Facebook AI Research (EurNLP, London) <span class="award-year">2019</span></div>
+          <div class="award-item">IBM CEO Award for Outstanding Achievement <span class="award-year">2018</span></div>
+          <div class="award-item">IBM Research First Patent Award <span class="award-year">2018</span></div>
+          <div class="award-item">MHRD Scholarship, Government of India <span class="award-year">2012–15</span></div>
+        </div>
+        -->
+
+      </div>
+    </div>
+  </div>
+
+  <br>
+</body>
+</html>
